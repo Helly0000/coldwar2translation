@@ -8,6 +8,6 @@ with open(r'MyLanguage.json', encoding='utf-8-sig') as f:
         else:
             t_list.append(line['key']+"="+line['translation']+'\n')
 
-with open(r'Language.dat','w', encoding='utf-8') as r:
+with open(r'MyLanguage.dat','w', encoding='utf-8') as r:
     for line in t_list:
         r.write(line)
